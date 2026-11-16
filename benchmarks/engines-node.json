@@ -1,0 +1,110 @@
+{
+  "timestamp": "2026-11-16T21:29:38.614Z",
+  "environment": {
+    "cpu": "INTEL(R) XEON(R) PLATINUM 8573C",
+    "node": "v24.22.1",
+    "platform": "linux",
+    "architecture": "x64"
+  },
+  "method": "60 reference questions, 3 rounds, 5 warmup answers per engine, alternating order, creativity 0. Shared model, float32 rounding, and synchronous streaming adapter. Excludes network, module import, worker scheduling, and DOM rendering.",
+  "model_bytes": 381808,
+  "source_bytes": {
+    "javascript": 4425,
+    "pascal_generated": 180751,
+    "pascal_adapter": 1005
+  },
+  "results": {
+    "javascript": {
+      "load_median_ms": 0.5659599999999898,
+      "runs": [
+        {
+          "total_ms": 4892.176857,
+          "matches": 60,
+          "questions": 60,
+          "processed_characters": 2560,
+          "output_characters": 989,
+          "mean_answer_ms": 81.52513736666668,
+          "p50_answer_ms": 74.13345899999968,
+          "p95_answer_ms": 136.29220799999985,
+          "p50_first_character_ms": 51.152477000000545,
+          "processed_characters_per_second": 523.2844344817602,
+          "output_characters_per_second": 202.15949441502374
+        },
+        {
+          "total_ms": 4649.505981999999,
+          "matches": 60,
+          "questions": 60,
+          "processed_characters": 2560,
+          "output_characters": 989,
+          "mean_answer_ms": 77.48111834999993,
+          "p50_answer_ms": 70.7901529999981,
+          "p95_answer_ms": 126.28925499999968,
+          "p50_first_character_ms": 48.019304000001284,
+          "processed_characters_per_second": 550.5961299782667,
+          "output_characters_per_second": 212.7107705267601
+        },
+        {
+          "total_ms": 4899.738441000001,
+          "matches": 60,
+          "questions": 60,
+          "processed_characters": 2560,
+          "output_characters": 989,
+          "mean_answer_ms": 81.63831718333343,
+          "p50_answer_ms": 73.48871599999984,
+          "p95_answer_ms": 143.08519299999898,
+          "p50_first_character_ms": 50.85373099999924,
+          "processed_characters_per_second": 522.4768690872247,
+          "output_characters_per_second": 201.84750919033797
+        }
+      ],
+      "median_mean_answer_ms": 81.52513736666668,
+      "median_processed_characters_per_second": 523.2844344817602
+    },
+    "pas2js": {
+      "load_median_ms": 1.3908490000000029,
+      "runs": [
+        {
+          "total_ms": 5005.695716,
+          "matches": 60,
+          "questions": 60,
+          "processed_characters": 2560,
+          "output_characters": 989,
+          "mean_answer_ms": 83.41612545000005,
+          "p50_answer_ms": 77.08476400000109,
+          "p95_answer_ms": 135.23823300000004,
+          "p50_first_character_ms": 52.78762300000017,
+          "processed_characters_per_second": 511.4174223210015,
+          "output_characters_per_second": 197.57493385760566
+        },
+        {
+          "total_ms": 4786.132801000002,
+          "matches": 60,
+          "questions": 60,
+          "processed_characters": 2560,
+          "output_characters": 989,
+          "mean_answer_ms": 79.75559445000002,
+          "p50_answer_ms": 71.98921500000142,
+          "p95_answer_ms": 130.23612999999932,
+          "p50_first_character_ms": 48.99178599999868,
+          "processed_characters_per_second": 534.8785974900488,
+          "output_characters_per_second": 206.63864567096027
+        },
+        {
+          "total_ms": 4945.039747999999,
+          "matches": 60,
+          "questions": 60,
+          "processed_characters": 2560,
+          "output_characters": 989,
+          "mean_answer_ms": 82.40521296666708,
+          "p50_answer_ms": 73.42857899999944,
+          "p95_answer_ms": 135.4823319999996,
+          "p50_first_character_ms": 52.34783299999981,
+          "processed_characters_per_second": 517.6904798460682,
+          "output_characters_per_second": 199.99839240928182
+        }
+      ],
+      "median_mean_answer_ms": 82.40521296666708,
+      "median_processed_characters_per_second": 517.6904798460682
+    }
+  }
+}

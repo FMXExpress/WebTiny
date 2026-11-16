@@ -27,3 +27,9 @@ Splits are deterministic for a fixed dataset and seed. Records with the same fac
 ## Training kit download
 
 Run `python scripts/package_training_kit.py` to build `dist/training-kit.zip` for the download links in the browser app. It includes source, tests, and training instructions.
+
+## Switch inference engines
+
+The Neural Monitor includes **Inference engine**: JavaScript (default) or Pascal compiled with pas2js. Both run on the CPU, use the same model, stream answers, and drive the same monitor. You can switch while idle, including after loading a custom model.
+
+Pascal source and build instructions are in [pascal/README.md](pascal/README.md). The generated JavaScript is committed. `npm test` includes cross-engine parity and worker-switching checks. `npm run benchmark` reruns the comparison; see [benchmarks/README.md](benchmarks/README.md) for measurements and limitations. In this Node test, inference speed was effectively tied; the hand-written JavaScript engine is considerably smaller.
