@@ -1,0 +1,8 @@
+{
+  "name": "webtiny",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node tests/engine.test.mjs && node tests/dataset.test.mjs"
+  }
+}

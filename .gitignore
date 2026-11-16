@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+trained/
+dist/training-kit.zip
+node_modules/
+.DS_Store

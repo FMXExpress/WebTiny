@@ -1,0 +1,3 @@
+import {Tiny} from './engine.js';
+let model,cancelled=false;
+self.onmessage=async({data})=>{try{if(data.type==='cancel'){cancelled=true;return;}if(data.type==='load'){const next=new Tiny(data.buffer);model=next;postMessage({type:'ready',D:model.D,L:model.L,H:model.H,HID:model.HID});return;}if(data.type==='ask'){if(!model)throw Error('Load a model first.');cancelled=false;let count=0;const start=performance.now();for(const event of model.generate(data.text,data.creativity)){if(cancelled)break;count++;postMessage({type:'token',...event,speed:count/((performance.now()-start)/1000)});await new Promise(r=>setTimeout(r,0));}postMessage({type:'done',seconds:(performance.now()-start)/1000,cancelled});}}catch(e){postMessage({type:'error',message:e.message});}};
