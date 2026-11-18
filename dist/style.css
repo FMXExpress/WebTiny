@@ -9,3 +9,11 @@
 .voice-control { display: flex; align-items: center; gap: .55rem; padding: .75rem 0; cursor: pointer; }
 .voice-control input { accent-color: #377b51; }
 .speaking-word { background: #d2ecca; color: #173c24; border-radius: 3px; }
+
+.voice-settings { padding-bottom: 8px; }
+.voice-settings p { color: #819675; font-size: 9px; line-height: 1.6; margin: 0 0 10px; }
+.voice-control { font-size: 11px; }
+.voice-control input { accent-color: #bddb9a; }
+.message-play { border: 0; background: none; font-size: 9px; color: #abc88b; padding: 3px 8px; }
+.message-play[aria-pressed="true"] { color: #d2ecca; }
+.message-play:disabled { cursor: default; }

@@ -36,4 +36,4 @@ Pascal source and build instructions are in [pascal/README.md](pascal/README.md)
 
 ### Robot voice
 
-After a complete answer, WebTiny plays the original Tiny PC-speaker letter effect and highlights each word in time. Both inference engines use the same local Web Audio player. Press any key to stop playback or clear **Robot voice** in the monitor to turn it off. The setting is saved in this browser.
+After a complete answer, WebTiny plays Tiny’s 1200 Hz completion beep followed by its PC-speaker letter effect, highlighting each word in time. Both inference engines use the same local Web Audio player; no speech service, microphone, or learned voice model is involved. Press any key or **Stop voice** to stop playback. Use **Play voice** beside an answer to replay it, including saved conversations. Clear **Robot voice** in the monitor to disable automatic playback; the setting is saved in this browser. Browser audio starts after a user gesture. Audio failures leave text chat usable, and stopping generation also prevents its answer from being spoken.
