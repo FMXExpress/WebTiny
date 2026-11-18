@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node tests/engine.test.mjs && node tests/dataset.test.mjs && node tests/pascal.test.mjs && node tests/worker.test.mjs",
+    "test": "node tests/engine.test.mjs && node tests/dataset.test.mjs && node tests/pascal.test.mjs && node tests/worker.test.mjs && node --test tests/robot-voice.test.mjs",
     "build:pascal": "python3 scripts/build_pascal.py",
     "benchmark": "node scripts/benchmark_engines.mjs"
   }

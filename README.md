@@ -33,3 +33,7 @@ Run `python scripts/package_training_kit.py` to build `dist/training-kit.zip` fo
 The Neural Monitor includes **Inference engine**: JavaScript (default) or Pascal compiled with pas2js. Both run on the CPU, use the same model, stream answers, and drive the same monitor. You can switch while idle, including after loading a custom model.
 
 Pascal source and build instructions are in [pascal/README.md](pascal/README.md). The generated JavaScript is committed. `npm test` includes cross-engine parity and worker-switching checks. `npm run benchmark` reruns the comparison; see [benchmarks/README.md](benchmarks/README.md) for measurements and limitations. In this Node test, inference speed was effectively tied; the hand-written JavaScript engine is considerably smaller.
+
+### Robot voice
+
+After a complete answer, WebTiny plays the original Tiny PC-speaker letter effect and highlights each word in time. Both inference engines use the same local Web Audio player. Press any key to stop playback or clear **Robot voice** in the monitor to turn it off. The setting is saved in this browser.
